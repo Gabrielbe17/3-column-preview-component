@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Primary */
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+}
+html{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--VeryLightGray);
+
+}
+.lexendDeca{
+    font-family: 'Lexend Deca', sans-serif;
+}
+/* Grid Container */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 75%;
+    padding: 5em 0;
+    margin: 5rem auto;
+    max-width: 70rem;
+    position: relative;
+
+}
+/* Cards */
+.card{
+    width: 100%;
+    margin: 2rem auto;
+    border: 1px solid transparent;
+    padding: 3.5em 2em;
+}
+.card > h1{
+    margin: .8em 0 1em 0;
+    color: var(--VeryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+}
+.card > p{
+    color: var(--TransparentWhite);
+    line-height: 2em;
+}
+.btn{
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: var(--VeryLightGray);
+    border-radius: 2em;
+    margin-top: 4.5em;
+    padding: 1em 1.8em;
+    transition: all .3s ;
+}
+.btn:hover{
+    background-color: transparent;
+    color: var(--TransparentWhite) !important;
+    border: .15rem solid var(--TransparentWhite);
+}
+/* Indiviudal Cards */
+.card1{
+    background-color: var(--BrightOrange);
+    border-radius: .7em 0 0 .7em;
+}
+.card2{
+    background-color: var(--DarkCyan);
+}
+.card3{
+    background-color: var(--VeryDarkCyan);
+    border-radius: 0 .7em .7em 0;
+}
+
+.card1 .btn{color: var(--BrightOrange);}
+.card2 .btn{color: var(--DarkCyan);}
+.card3 .btn{color: var(--VeryDarkCyan);}
+/* footer */
+.footer{   
+    width: 100%; 
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.cta{
+    color: var(--BrightOrange);
+}
+/* Media Queries for border cards */
+@media screen and (max-width:999px) {
+    .card1{
+        border-radius: .7rem 0 0 0;
+    }
+    .card2{
+        border-radius: 0 .7rem .7rem 0;
+    }
+    .card3{
+        border-radius: 0 0 .7rem .7rem;
+    }
+}
+@media screen and (max-width:667px) {
+    .card1{
+        border-radius: .7rem .7rem 0 0;
+    }
+    .card2{
+        border-radius: 0;
+    }
+}
