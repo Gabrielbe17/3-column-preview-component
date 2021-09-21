@@ -44,7 +44,7 @@ body{
 /* Cards */
 .card{
     width: 100%;
-    margin: 2rem auto;
+    margin: 0 auto;
     border: 1px solid transparent;
     padding: 3.5em 2em;
 }
