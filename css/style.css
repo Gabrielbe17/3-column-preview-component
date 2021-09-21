@@ -23,20 +23,19 @@ a{
 body{
     display: flex;
     min-height: 100vh;
+    justify-content: center;
     align-items: center;
     background-color: var(--VeryLightGray);
-
+    padding: 5em 0;
 }
 .lexendDeca{
     font-family: 'Lexend Deca', sans-serif;
 }
 /* Grid Container */
-.grid{
+main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 75%;
-    padding: 5em 0;
-    margin: 5rem auto;
     max-width: 70rem;
     position: relative;
 
@@ -48,7 +47,7 @@ body{
     border: 1px solid transparent;
     padding: 3.5em 2em;
 }
-.card > h1{
+.card > h2{
     margin: .8em 0 1em 0;
     color: var(--VeryLightGray);
     font-family: 'Big Shoulders Display', cursive;
@@ -90,14 +89,7 @@ body{
 .card1 .btn{color: var(--BrightOrange);}
 .card2 .btn{color: var(--DarkCyan);}
 .card3 .btn{color: var(--VeryDarkCyan);}
-/* footer */
-.footer{   
-    width: 100%; 
-    font-size: 1.2rem;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-}
+
 .cta{
     color: var(--BrightOrange);
 }
